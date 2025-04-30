@@ -2,9 +2,10 @@
 #ifndef OPERATION_HPP
 #define OPERATION_HPP
 
+#include "exported.hpp"
 #include "structure"  // IWYU pragma: keep
 
-class Operation {
+class EXPORTED Operation {
  public:
   Operation() = default;
 

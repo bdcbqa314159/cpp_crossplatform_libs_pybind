@@ -2,9 +2,10 @@
 #ifndef STRUCTURE_HPP
 #define STRUCTURE_HPP
 
+#include "exported.hpp"
 #include <utility>  // std::pair
 
-class Structure {
+class EXPORTED Structure {
  public:
   Structure() = default;
   Structure(int, int);
