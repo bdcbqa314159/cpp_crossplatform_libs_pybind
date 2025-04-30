@@ -1,0 +1,7 @@
+#pragma once
+#ifndef LIBRARY_STRUCTURE
+#define LIBRARY_STRUCTURE
+
+#include "./includes/structure.hpp"  // IWYU pragma: keep
+
+#endif  // LIBRARY_STRUCTURE

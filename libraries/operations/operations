@@ -1,0 +1,7 @@
+#pragma once
+#ifndef OPERATIONS_LIB
+#define OPERATIONS_LIB
+
+#include "./includes/operations.hpp"
+
+#endif  // OPERATIONS_LIB
