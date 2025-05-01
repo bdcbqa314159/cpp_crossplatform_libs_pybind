@@ -6,11 +6,11 @@
 #ifdef WIN32
 #include "./windows/DLLoader.hpp"
 #elif defined(__linux__) || defined(__APPLE__)
-#include "./linux/DLLoader.hpp"
+#include "./linux/DLLoader.hpp"  // IWYU pragma: keep
 #else
 #endif
 
-#include "./IDLLoader.hpp"
-#include "./library_names.hpp"
+#include "./IDLLoader.hpp"      // IWYU pragma: keep
+#include "./library_names.hpp"  // IWYU pragma: keep
 
 #endif  // DL_LOADER_INCLUDES

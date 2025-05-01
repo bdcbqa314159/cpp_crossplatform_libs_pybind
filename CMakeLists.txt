@@ -7,6 +7,14 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+set(CUSTOM_LIBRARY_DIR_PYTHON ${CMAKE_SOURCE_DIR}/.venv/lib/python3.13/site-packages)
+
+# message(STATUS "Python3_ROOT_DIR: ${Python3_ROOT_DIR}")
+find_package(Python3 COMPONENTS Interpreter Development)
+
+
+find_package(pybind11 REQUIRED)
+
 #set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 
 if(WIN32)
@@ -33,3 +41,8 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 add_subdirectory(libraries)
 add_subdirectory(apps)
+
+install(
+    DIRECTORY ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}
+    DESTINATION ${CMAKE_INSTALL_PREFIX}
+)
