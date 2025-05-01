@@ -5,15 +5,15 @@
 #include <string>
 
 #ifdef __APPLE__
-static const std::string LIBRARY_NAME = "libmy_dynamic_lib.dylib";
+static const std::string LIBRARY_NAME = "libplugin.dylib";
 #endif
 
 #ifdef __linux__
-static const std::string LIBRARY_NAME = "libmy_dynamic_lib.so";
+static const std::string LIBRARY_NAME = "libplugin.so";
 #endif
 
 #ifdef WIN32
-static const std::string LIBRARY_NAME = "my_dynamic_lib.dll";
+static const std::string LIBRARY_NAME = "plugin.dll";
 #endif
 
 #endif  // DL_LOADER_LIBRARY_NAMES_HPP

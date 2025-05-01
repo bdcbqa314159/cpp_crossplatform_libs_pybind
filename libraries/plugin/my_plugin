@@ -1,0 +1,7 @@
+#pragma once
+#ifndef PLUGIN_LIBRARY_HPP
+#define PLUGIN_LIBRARY_HPP
+
+#include "./includes/my_plugin.hpp"  // IWYU pragma: keep
+
+#endif  // PLUGIN_LIBRARY_HPP
