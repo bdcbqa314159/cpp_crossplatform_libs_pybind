@@ -3,11 +3,11 @@
 #include "plugin/includes/my_plugin.hpp"
 
 int main() {
-  run();
+  run(1, 2);
   return 0;
 }
 
-void run() {
+void run(int a, int b) {
   dlloader::DLLoader<Processor> my_library_loader(LIBRARY_NAME, "allocator",
                                                   "deallocator");
 
@@ -16,6 +16,6 @@ void run() {
   std::shared_ptr<Processor> my_library_functions =
       my_library_loader.DLGetInstance();
 
-  int result = my_library_functions->operator()(1, 2);
+  int result = my_library_functions->operator()(a, b);
   std::cout << "Result of operation: " << result << "\n";
 }
