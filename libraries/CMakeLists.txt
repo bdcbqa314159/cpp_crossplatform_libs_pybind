@@ -6,4 +6,3 @@ add_subdirectory(structure)
 add_subdirectory(operations)
 add_subdirectory(plugin)
 add_subdirectory(python_interface)
-
